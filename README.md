@@ -1,12 +1,57 @@
-# React + Vite
+# 📸 Photo Gallery in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and minimal photo gallery app built with **React**, styled using **Tailwind CSS**, and powered by **Picsum Photos** API to generate random images.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Click here to view the live app](https://mahnoorshabbir-photo-gallery.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Folder Structure
+
+```
+photo-gallery-react/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+
+---
+
+## ✨ Features
+
+- Responsive photo grid layout
+- Fetches random images using the [Picsum Photos](https://picsum.photos/) API
+- Button to refresh with new images
+- Smooth transition and shadow effects
+
+---
+
+## 🧠 How It Works
+
+- `useEffect()` calls `loadPhotos()` on mount.
+- `loadPhotos()` generates 3 random image URLs using `Math.random()` and the Picsum API.
+- Images are displayed using `.map()`.
+- Clicking the button reloads new images.
+
+---
